@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MyController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#closeAction" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="miTree" mnemonicParsing="false" onAction="#treeAction" text="Tree" />
+                  <MenuItem fx:id="miSockWhite" mnemonicParsing="false" onAction="#sockWhiteAction" text="Sock" />
+                  <MenuItem fx:id="miSockGreen" mnemonicParsing="false" onAction="#sockGreenAction" text="Sock" />
+                  <MenuItem fx:id="miBallWhite" mnemonicParsing="false" onAction="#ballWhiteAction" text="Ball" />
+                  <MenuItem fx:id="miBallGreen" mnemonicParsing="false" onAction="#ballGreenAction" text="Ball" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#aboutAction" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text fx:id="txtCount" layoutX="464.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9">
+         <font>
+            <Font name="System Bold Italic" size="96.0" />
+         </font></Text>
+   </children>
+</AnchorPane>
